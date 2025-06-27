@@ -4,7 +4,7 @@ title: "Gabriel Schimidel"
 permalink: /equipe/gabriel-schimidel/
 profile:
   name: "Gabriel Schimidel"
-  profession: "Aluno(a) de Iniciação Científica"
+  profession: "Aluno de Iniciação Científica"
   avatar: "/assets/img/equipe/Gabriel-Schimidel.jpg"
   email: "contato@observatoriooceanografico.org"
   github: "https://github.com/Schimidel"
