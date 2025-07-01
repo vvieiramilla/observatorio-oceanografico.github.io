@@ -5,7 +5,7 @@ permalink: /equipe/anna-monteiro/
 profile:
   name: "Anna Monteiro"
   profession: "Aluna de Extensão"
-  avatar: "/assets/img/equipe/Anna-Monteiro.png"
+  avatar: "/assets/img/equipe/Anna-Monteiro.jpg"
   email: "anna_monteiro@id.uff.br"
   github: "https://github.com/annacomonteiro"
   orcid: "https://orcid.org/0009-0005-7563-3798"
