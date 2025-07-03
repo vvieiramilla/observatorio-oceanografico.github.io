@@ -23,6 +23,10 @@ Atualmente participo do projeto [ARA-TINGA](https://observatoriooceanografico.or
 
 Além da pesquisa, também sou artista de circo e acrobata aéreo. Vejo arte e ciência como expressões de uma inquietação que brota do memso lugar dentro de nós. Ambas alimentam meu pensamento e prática. Desenvolvo projetos envovlendo performance, audiovisual, dança, teatro e circo. Acredito que o pesquisador e o artista são dimensões inseparáveis da minha identidade.
 
+<p align="center">
+  <img src="/assets/img/equipe/Mateus_001.jpg" alt="Mateus Sayão" width="300"/>
+</p>
+
 Curto muito obras de distopia e ficção científica porque nesse mesmo esforço interdisciplinar, acredito que a imaginação é uma potência. A autora Ursula K. Le Guin, autora do romance _A Mão Esquerda da Escuridão_, afirmou que: "A ficção científica não prevê; descreve". Entre as obras que me inspiram, destaco *Sexta-feira ou Os Limbos do Pacífico*, de Michel Tournier — uma releitura de *Robinson Crusoé*, de Defoe. Para mim, esse livro representa de maneira profunda a tensão essencial entre técnica, alteridade e sociedade em confronto com a existência humana.
 
 🖊️ Para contato: utilize o e-mail acima ou procure nossa equipe pelo site institucional.
