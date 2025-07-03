@@ -4,7 +4,7 @@ title: "Silas Júnior"
 permalink: /equipe/silas-junior/
 profile:
   name: "Silas Júnior"
-  profession: "Aluno(a) de Iniciação Científica"
+  profession: "Aluno de Iniciação Científica"
   avatar: "/assets/img/equipe/Silas-Junior.jpg"
   email: "silasjunior@id.uff.br"
   github: "https://github.com/silasfljr"
