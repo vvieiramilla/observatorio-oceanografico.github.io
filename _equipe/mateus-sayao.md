@@ -5,7 +5,7 @@ permalink: /equipe/mateus-sayao/
 profile:
   name: "Mateus Sayão"
   profession: "Aluno de Mestrado"
-  avatar: "/assets/img/equipe/Mateus-Sayao.jpg"
+  avatar: "/assets/img/equipe/mateus-sayao.jpg"
   email: "mateussayao@id.uff.br"
   github: "https://github.com/mateussayao"
   orcid: "https://orcid.org/0009-0009-8303-3310"
