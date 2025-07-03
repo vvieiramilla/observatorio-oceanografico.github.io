@@ -5,7 +5,7 @@ permalink: /equipe/luciano-rapagna/
 profile:
   name: "Luciano Rapagna"
   profession: "Pós-doc"
-  avatar: "/assets/img/equipe/luciano-rapagna.png"
+  avatar: "/assets/img/equipe/luciano-rapagna.jpg"
   email: "lucianorapagna@id.uff.br"
   orcid: "https://orcid.org/0000-0002-9009-4463"
   scholar: ""
