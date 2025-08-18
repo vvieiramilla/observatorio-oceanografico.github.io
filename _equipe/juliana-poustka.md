@@ -5,7 +5,7 @@ permalink: /equipe/juliana-poustka/
 profile:
   name: "Juliana Poustka"
   profession: "Aluna de Iniciação Científica"
-  avatar: "/assets/img/equipe/Juliana-Poustka.png"
+  avatar: "/assets/img/equipe/Juliana-Poustka.jpg"
   email: "julianapoustka@id.uff.br"
   github: "https://github.com/julianaalves-p"
   orcid: ""
