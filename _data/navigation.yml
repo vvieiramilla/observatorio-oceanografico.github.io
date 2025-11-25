@@ -11,3 +11,5 @@ main:
     url: /extensao/
   - title: "Notícias"
     url: /noticias/
+  - title: "Produções"
+    url: /producoes/
