@@ -9,6 +9,9 @@ alt_lang: /en/projects/antarctic-observatory/
 header:
   teaser: assets/img/projects/antarctic-observatory/antarctic-observatory-card.png
 
+excerpt: >
+  Iniciativa de pesquisa dedicada ao monitoramento e à compreensão do ambiente antártico em rápida transformação, integrando sensoriamento remoto, observações por satélite e métodos orientados por dados para investigar as interações entre gelo, oceano e atmosfera.
+
 tags:
   - Antártica
   - mudanças climáticas
@@ -19,12 +22,25 @@ tags:
 order: 1
 ---
 
-O **Antarctic Observatory** é uma iniciativa de pesquisa dedicada ao
-monitoramento e à compreensão do ambiente antártico em rápida transformação.
-O projeto integra observações por satélite, técnicas de sensoriamento remoto
-e métodos orientados por dados para investigar as complexas interações entre
-gelo, oceano e atmosfera em uma das regiões mais remotas e frágeis do Sistema
-Terrestre.
+<div style="display: flex; align-items: flex-start; gap: 1rem; margin: 1.5rem 0;">
+
+  <div style="background: #ffffff; padding: 0.5rem; border-radius: 6px;">
+    <img src="{{ site.baseurl }}/assets/img/projects/antarctic-observatory/antarctic-observatory-card.png"
+         alt="geemap-tools"
+         style="width: 120px; height: auto; display: block;">
+  </div>
+
+  <div>
+    <p>
+        O <strong>Antarctic Observatory</strong> é uma iniciativa de pesquisa dedicada ao
+        monitoramento e à compreensão do ambiente antártico em rápida transformação.
+        O projeto integra observações por satélite, técnicas de sensoriamento remoto
+        e métodos orientados por dados para investigar as complexas interações entre
+        gelo, oceano e atmosfera em uma das regiões mais remotas e frágeis do Sistema
+    </p>
+  </div>
+
+</div>
 
 ## Escopo científico
 

@@ -9,6 +9,9 @@ alt_lang: /projetos/antarctic-observtatory/
 header:
   teaser: assets/img/projects/antarctic-observatory/antarctic-observatory-card.png
 
+excerpt: >
+  A research initiative dedicated to monitoring and understanding the rapidly changing Antarctic environment, integrating satellite observations, remote sensing, and data-driven methods to investigate interactions between ice, ocean, and atmosphere.
+  
 tags:
   - Antarctica
   - climate change
@@ -19,11 +22,25 @@ tags:
 order: 1  
 ---
 
-The **Antarctic Observatory** is a research initiative dedicated to monitoring
-and understanding the rapidly changing Antarctic environment. The project
-integrates satellite observations, remote sensing techniques, and data-driven
-methods to investigate the complex interactions between ice, ocean, and
-atmosphere in one of the most remote and fragile regions of the Earth system.
+<div style="display: flex; align-items: flex-start; gap: 1rem; margin: 1.5rem 0;">
+
+  <div style="background: #ffffff; padding: 0.5rem; border-radius: 6px;">
+    <img src="{{ site.baseurl }}/assets/img/projects/antarctic-observatory/antarctic-observatory-card.png"
+         alt="geemap-tools"
+         style="width: 120px; height: auto; display: block;">
+  </div>
+
+  <div>
+    <p>
+        The <strong>Antarctic Observatory</strong> is a research initiative dedicated to monitoring
+        and understanding the rapidly changing Antarctic environment. The project
+        integrates satellite observations, remote sensing techniques, and data-driven
+        methods to investigate the complex interactions between ice, ocean, and
+        atmosphere in one of the most remote and fragile regions of the Earth system.
+    </p>
+  </div>
+
+</div>
 
 ## Scientific scope
 
