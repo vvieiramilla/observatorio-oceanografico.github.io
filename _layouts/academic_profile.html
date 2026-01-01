@@ -1,57 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include masthead.html %}  <!-- Navbar superior padrão -->
+---
+layout: default
+---
 
-    <div class="academic-container" style="display: flex; min-height: 100vh;">
+<article class="academic-profile">
 
-      <!-- Sidebar lateral -->
-      <aside class="academic-sidebar" style="width: 280px; background-color: #f5f5f5; padding: 2rem; box-shadow: 2px 0 5px rgba(0,0,0,0.05); position: sticky; top: 0; height: 100vh; overflow-y: auto;">
-        {% if page.profile.avatar %}
-          <!-- Imagem original com bordas arredondadas levemente -->
-          <!-- <img src="{{ page.profile.avatar | relative_url }}" alt="Foto de {{ page.profile.name }}" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;"> -->
-          <!-- Imagem circular com ajuste de proporção -->
-          <img src="{{ page.profile.avatar | relative_url }}" alt="Foto de {{ page.profile.name }}" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
-        {% endif %}
-        <h2 style="margin-top: 0;">{{ page.profile.name }}</h2>
-        <p>{{ page.profile.location }}</p>
-          <ul style="list-style: none; padding: 0; font-size: 0.7rem;">
-            {% if page.profile.email %}
-            <li style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:{{ page.profile.email }}">{{ page.profile.email }}</a></li>
-            {% endif %}
-            {% if page.profile.orcid %}
-            <li style="margin-bottom: 0.5rem;"><strong>ORCID:</strong> <a href="https://orcid.org/{{ page.profile.orcid }}" target="_blank">{{ page.profile.orcid }}</a></li>
-            {% endif %}
-            {% if page.profile.github %}
-            <li style="margin-bottom: 0.5rem;"><strong>GitHub:</strong> <a href="{{ page.profile.github }}" target="_blank">{{ page.profile.github }}</a></li>
-            {% endif %}
-            {% if page.profile.scholar %}
-            <li style="margin-bottom: 0.5rem;"><strong>Scholar:</strong> <a href="{{ page.profile.scholar }}" target="_blank">Google Scholar</a></li>
-            {% endif %}
-            {% if page.profile.website %}
-            <li style="margin-bottom: 0.5rem;"><strong>Website:</strong> <a href="{{ page.profile.website }}" target="_blank">{{ page.profile.website }}</a></li>
-            {% endif %}
-          </ul>
-      </aside>
+  <header class="profile-header">
+    <img
+      src="{{ site.baseurl }}{{ page.avatar }}"
+      alt="{{ page.title }}"
+      class="profile-avatar"
+    >
 
-      <!-- Conteúdo principal -->
-      <main class="academic-main" style="flex: 1; padding: 2rem; max-width: 960px; margin: 0 auto;">
-        
-        <article>
-          {{ content }}
-        </article>
-      </main>
+    <div class="profile-meta">
+      <h1 class="profile-name">{{ page.title }}</h1>
 
+      {% if page.role %}
+        <p class="profile-role">{{ page.role }}</p>
+      {% endif %}
+
+      {% if page.affiliation %}
+        <p class="profile-affiliation">
+          {% if page.affiliation_url %}
+            <a href="{{ page.affiliation_url }}" target="_blank" rel="noopener">
+              {{ page.affiliation }}
+            </a>
+          {% else %}
+              {{ page.affiliation }}
+          {% endif %}
+        </p>
+      {% endif %}
+
+      {% if page.location %}
+        <p class="profile-location">{{ page.location }}</p>
+      {% endif %}
     </div>
+  </header>
 
-    {% include scripts.html %}
-  </body>
-</html>
+  {% if page.email or page.orcid or page.lattes or page.scholar or page.github %}
+  <nav class="profile-links">
+    <ul>
+      {% if page.email %}
+        <li><a href="mailto:{{ page.email }}">Email</a></li>
+      {% endif %}
+      {% if page.orcid %}
+        <li><a href="https://orcid.org/{{ page.orcid }}" target="_blank" rel="noopener">ORCID</a></li>
+      {% endif %}
+      {% if page.lattes %}
+        <li><a href="{{ page.lattes }}" target="_blank" rel="noopener">Lattes</a></li>
+      {% endif %}
+      {% if page.scholar %}
+        <li><a href="{{ page.scholar }}" target="_blank" rel="noopener">Google Scholar</a></li>
+      {% endif %}
+      {% if page.github %}
+        <li><a href="{{ page.github }}" target="_blank" rel="noopener">GitHub</a></li>
+      {% endif %}
+      {% if page.scopus %}
+        <li><a href="{{ page.scopus }}" target="_blank" rel="noopener">Scopus</a></li>
+      {% endif %}
+      {% if page.medium %}
+        <li><a href="{{ page.medium }}" target="_blank" rel="noopener">Medium</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
 
+  <section class="profile-content">
+    {{ content }}
+  </section>
 
-    {% include scripts.html %}
-  </body>
-</html>
+</article>

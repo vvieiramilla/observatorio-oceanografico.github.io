@@ -1,16 +1,73 @@
-<footer class="page__footer">
-  <div class="page__footer-follow">
-    <ul class="social-icons">
-      <li><a href="https://www.facebook.com/ObservatorioOceanografico/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-      <li><a href="https://www.instagram.com/observatoriooceanografico"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="https://www.linkedin.com/company/observatoriooceanografico/"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-      <li><a href="{{ '/feed.xml' | relative_url }}"><i class="fas fa-fw fa-rss-square"></i> Feed</a></li>
-    </ul>
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <!-- Redes sociais -->
+    <nav class="footer-social">
+      <a href="https://www.facebook.com/ObservatorioOceanografico/"
+         target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <a href="https://www.instagram.com/observatoriooceanografico"
+         target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/company/observatoriooceanografico/"
+         target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="{{ '/feed.xml' | relative_url }}"
+         aria-label="RSS Feed">
+        <i class="fas fa-rss"></i>
+      </a>
+    </nav>
+
+    <!-- Texto institucional -->
+    <div class="footer-meta">
+      <p>
+        © {{ site.time | date: '%Y' }} Observatório Oceanográfico · UFF
+      </p>
+
+      <p class="footer-tech">
+        {% if page.lang == "en" %}
+          Powered by
+        {% else %}
+          Desenvolvido com
+        {% endif %}
+        <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+        &amp;
+        <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+           target="_blank" rel="noopener">
+          Minimal Mistakes
+        </a>
+        —
+        {% if page.lang == "en" %}
+          with help from
+        {% else %}
+          com a ajuda da
+        {% endif %}
+        <a href="https://observatoriooceanografico.org/equipe/friday-bot/"
+           class="footer-friday"
+           target="_blank" rel="noopener">
+          F.R.I.D.A.Y.
+        </a>
+      </p>
+
+      <!-- Política de privacidade -->
+      <p class="footer-privacy">
+        {% if page.lang == "en" %}
+          <a href="{{ '/en/about/privacy/' | relative_url }}">Privacy Policy</a>
+        {% else %}
+          <a href="{{ '/sobre/privacidade/' | relative_url }}">Política de Privacidade</a>
+        {% endif %}
+      </p>
+    </div>
+
   </div>
 
-  <div class="page__footer-copyright">
-    © {{ site.time | date: '%Y' }} Observatório Oceanográfico. Powered by <a href="https://jekyllrb.com/">Jekyll</a> &amp;
-    <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal Mistakes</a> e com a ajuda da <a href="https://observatoriooceanografico.org/equipe/friday-bot/" target="_blank" rel="noopener" style="font-weight: bold; text-decoration: none; color: #005577;">F.R.I.D.A.Y.</a>.
-  </div>
 </footer>
+
 

@@ -1,10 +1,8 @@
 ---
 title: "Ayemboê 2025: O Observatório Oceanográfico e o Café — uma conexão que vai além da xícara"
 date: 2025-08-01
-categories: [noticia]
-layout: single
-author_profile: false
-read_time: true
+layout: post
+lang: pt
 excerpt: "A Iniciativa Ayemboê do O² está de volta! Agora com foco em mudanças climáticas, índices de seca e produtividade do café."
 ---
 

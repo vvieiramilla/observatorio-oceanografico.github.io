@@ -1,0 +1,75 @@
+<nav class="main-nav">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <div class="nav-left">
+      <a href="{{ site.baseurl }}{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="nav-logo">
+        <img src="{{ site.baseurl }}/assets/img/o2-logo-transp.png"
+             alt="Observatório Oceanográfico"
+             class="nav-logo-img">
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Menu -->
+    <ul class="nav-menu">
+      {% if page.lang == 'en' %}
+
+        <!-- ABOUT (EN) -->
+        <li class="has-submenu">
+          <a href="{{ site.baseurl }}/en/about/">About</a>
+          <ul class="submenu">
+            <li><a href="{{ site.baseurl }}/en/about/history/">History</a></li>
+            <li><a href="{{ site.baseurl }}/en/about/team/">Team</a></li>
+          </ul>
+        </li>
+
+        <!-- PORTFOLIO (EN) -->
+        <li>
+          <a href="{{ site.baseurl }}/en/portfolio/">Portfolio</a>
+        </li>
+
+        <!-- RESOURCES / NEWS (EN) -->
+        <li><a href="{{ site.baseurl }}/en/resources/">Resources</a></li>
+        <li><a href="{{ site.baseurl }}/en/news/">News</a></li>
+
+      {% else %}
+
+        <!-- SOBRE (PT) -->
+        <li class="has-submenu">
+          <a href="{{ site.baseurl }}/sobre/">Sobre</a>
+          <ul class="submenu">
+            <li><a href="{{ site.baseurl }}/sobre/historia/">História</a></li>
+            <li><a href="{{ site.baseurl }}/sobre/equipe/">Equipe</a></li>
+          </ul>
+        </li>
+
+        <!-- PORTFÓLIO (PT) -->
+        <li>
+          <a href="{{ site.baseurl }}/portfolio/">Portfólio</a>
+        </li>
+
+        <!-- RECURSOS / NOTÍCIAS (PT) -->
+        <li><a href="{{ site.baseurl }}/recursos/">Recursos</a></li>
+        <li><a href="{{ site.baseurl }}/noticias/">Notícias</a></li>
+
+      {% endif %}
+    </ul>
+
+    <!-- Language Switch -->
+    <div class="nav-lang">
+      {% if page.lang == 'en' %}
+        <a href="{{ site.baseurl }}/pt/">PT</a> | <strong>EN</strong>
+      {% else %}
+        <strong>PT</strong> | <a href="{{ site.baseurl }}/en/">EN</a>
+      {% endif %}
+    </div>
+
+  </div>
+</nav>

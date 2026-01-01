@@ -1,64 +1,30 @@
 title: Observatório Oceanográfico
-name: Observatório Oceanográfico
-email: observatoriooceanografico@gmail.com
-description: >-
-  Laboratório institucional vinculado à Universidade Federal Fluminense.
-url: "https://observatorio-oceanografico.github.io"
-baseurl: ""
-repository: observatorio-oceanografico/observatorio-oceanografico.github.io
+description: Laboratório interdisciplinar da UFF dedicado às ciências do mar, mudanças climáticas e tecnologias ambientais
+baseurl: /o2-site-v2
+url: https://observatorio-oceanografico.github.io
 
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-feed
-
-logo: "/assets/img/O2_logo_branco.png"
+collections:
+  pages:
+    output: true
+  people:
+    output: true
+  projects:
+    output: true
+  resources:
+    output: true
+    permalink: /recursos/:name/   
 
 defaults:
   - scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: single
-      author_profile: true
-
-  - scope:
-      path: "_pages"
-      type: pages
+      path: ""
     values:
       layout: default
-      author_profile: false
 
   - scope:
-      path: "_equipe"
+      type: projects
     values:
-      layout: academic_profile      
+      layout: single
 
-navigation: main
-
-collections:
-  ensino:
-    output: true
-    permalink: /ensino/:path/
-  projetos:
-    output: true
-    permalink: /projetos/:path/
-  extensao:
-    output: true
-    permalink: /extensao/:path/
-  equipe:
-    output: true
-    permalink: /equipe/:path/
-  noticias:
-    output: true
-    permalink: /noticias/:path/
-
-include:
-  - _pages
-  - assets/css/custom_equipe.css
-  
-sass:
-  style: compressed
-  
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

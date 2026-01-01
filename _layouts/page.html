@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt">
-  <head>
-    {% include head.html %}
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
+---
+layout: default
+---
 
-    {% include nav.html %}  <!-- ✅ Isso carrega a barra superior -->
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-  </body>
-</html>
+{{ content }}

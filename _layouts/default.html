@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'pt' }}">
+  {% include head.html %}
+  <body class="{% if page.is_home %}home{% else %}internal{% endif %}">
+   
+    {% include institutional-bar.html %}
+    {% include navigation.html %}
+    {% include video-background.html %}
+
+    <main class="content">
+      {% if page.alt_lang %}
+        <div class="lang-switch">
+          {% if page.lang == "pt" %}
+            <strong>PT</strong> | <a href="{{ site.baseurl }}{{ page.alt_lang }}">EN</a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ page.alt_lang }}">PT</a> | <strong>EN</strong>
+          {% endif %}
+        </div>
+      {% endif %}
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- Script do menu hamburger -->
+    <script src="{{ site.baseurl }}/assets/js/menu.js"></script>
+
+  </body>
+</html>

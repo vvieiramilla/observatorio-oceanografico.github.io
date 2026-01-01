@@ -1,36 +1,51 @@
-<!-- _includes/head.html -->
-<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} — Observatório Oceanográfico</title>
 
-{% include seo.html %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% unless site.atom_feed.hide %}
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-{% endunless %}
+  <!-- Favicon -->
+  <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  {% if site.enable_copy_code_button -%}
-    window.enable_copy_code_button = true;
-  {%- endif %}
-</script>
+  <!-- Font Awesome (ícones sociais) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer">
 
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/custom-equipe.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/custom-midias.css' | relative_url }}">
+  <!-- Redirecionamento automático de idioma -->
+  <script>
+    (function () {
+      // Só roda na raiz
+      if (window.location.pathname !== '/' &&
+          window.location.pathname !== '{{ site.baseurl }}/') {
+        return;
+      }
 
-<!-- Ícone do site -->
-<link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+      // Evita redirecionar se o usuário já escolheu
+      if (localStorage.getItem('o2-lang')) {
+        return;
+      }
 
-<!-- Font Awesome (carregamento leve) -->
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+      var lang = navigator.language || navigator.userLanguage;
 
-{% if site.head_scripts %}
-  {% for script in site.head_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+      if (lang && lang.toLowerCase().startsWith('en')) {
+        localStorage.setItem('o2-lang', 'en');
+        window.location.href = '{{ site.baseurl }}/en/';
+      } else {
+        localStorage.setItem('o2-lang', 'pt');
+      }
+    })();
+  </script>
+  <!-- RSS Feed -->
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Observatório Oceanográfico — Notícias"
+    href="{{ site.baseurl }}/feed.xml">
+
+  {% include analytics.html %}  
+</head>
 

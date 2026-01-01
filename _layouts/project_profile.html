@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<article class="project-profile">
+
+  {% if page.header.overlay_image %}
+  <section class="project-hero"
+    style="
+      --project-bg: url('{{ page.header.overlay_image | relative_url }}');
+      --project-overlay: {{ page.header.overlay_filter | default: 0.3 }};
+    ">
+      <div class="project-hero-overlay">
+        <h1 class="project-title">{{ page.title }}</h1>
+      </div>
+    </section>
+  {% else %}
+    <h1 class="project-title">{{ page.title }}</h1>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <aside class="project-meta">
+
+    {% if page.categories %}
+      <p>
+        <strong>
+          {% if page.lang == "en" %}Area{% else %}Área{% endif %}:
+        </strong>
+        {{ page.categories | join: ", " }}
+      </p>
+    {% endif %}
+
+    {% if page.tags %}
+      <p>
+        <strong>
+          {% if page.lang == "en" %}Topics{% else %}Temas{% endif %}:
+        </strong>
+        {{ page.tags | join: ", " }}
+      </p>
+    {% endif %}
+
+    {% if page.contact_email %}
+      <p>
+        <strong>
+          {% if page.lang == "en" %}
+            Want to know more?
+          {% else %}
+            Quer saber mais?
+          {% endif %}
+        </strong><br>
+        <a href="mailto:{{ page.contact_email }}">
+          {{ page.contact_email }}
+        </a>
+      </p>
+    {% endif %}
+
+  </aside>
+
+</article>
