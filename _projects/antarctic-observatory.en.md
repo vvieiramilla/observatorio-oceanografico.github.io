@@ -4,7 +4,7 @@ layout: project_profile
 collection: projects
 lang: en
 permalink: /en/projects/antarctic-observatory/
-alt_lang: /projetos/antarctic-observtatory/
+alt_lang: /projetos/antarctic-observatory/
 
 header:
   teaser: assets/img/projects/antarctic-observatory/antarctic-observatory-card.png
