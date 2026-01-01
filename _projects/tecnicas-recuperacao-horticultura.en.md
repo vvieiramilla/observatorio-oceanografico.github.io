@@ -27,6 +27,8 @@ tags:
   - environmental education
   - sustainable agriculture
 
+order: 5
+
 institutional_support:
   - PROEX/UFF
   - SIAEX

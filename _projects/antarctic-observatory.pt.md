@@ -7,7 +7,7 @@ permalink: /projetos/antarctic-observatory/
 alt_lang: /en/projects/antarctic-observatory/
 
 header:
-  teaser: assets/img/projects/antarctic-observatory-card.png
+  teaser: assets/img/projects/antarctic-observatory/antarctic-observatory-card.png
 
 tags:
   - Antártica
@@ -15,6 +15,8 @@ tags:
   - sensoriamento remoto
   - aprendizado de máquina
   - sistema terrestre
+
+order: 1
 ---
 
 O **Antarctic Observatory** é uma iniciativa de pesquisa dedicada ao

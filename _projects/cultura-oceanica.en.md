@@ -26,6 +26,8 @@ tags:
   - science communication
   - university outreach
 
+order: 3
+
 institutional_support:
   - PROEX/UFF
   - SIAEX

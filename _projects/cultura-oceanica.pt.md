@@ -26,6 +26,8 @@ tags:
   - divulgação científica
   - extensão universitária
 
+order: 3
+
 institutional_support:
   - PROEX/UFF
   - SIAEX

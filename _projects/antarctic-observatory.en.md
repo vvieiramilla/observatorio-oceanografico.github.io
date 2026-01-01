@@ -7,7 +7,7 @@ permalink: /en/projects/antarctic-observatory/
 alt_lang: /projetos/antarctic-observtatory/
 
 header:
-  teaser: assets/img/projects/antarctic-observatory-card.png
+  teaser: assets/img/projects/antarctic-observatory/antarctic-observatory-card.png
 
 tags:
   - Antarctica
@@ -15,6 +15,8 @@ tags:
   - remote sensing
   - machine learning
   - Earth system science
+
+order: 1  
 ---
 
 The **Antarctic Observatory** is a research initiative dedicated to monitoring
