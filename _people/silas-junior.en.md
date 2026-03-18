@@ -7,14 +7,15 @@ alt_lang: /pessoas/silas-junior/
 
 role: "Undergraduate Research Fellow (CNPq – Technological Development)"
 affiliation: "Fluminense Federal University (UFF) — Agricultural and Environmental Engineering"
-affiliation_url: ""
+affiliation_url: "http://ter.sites.uff.br/"
 
 avatar: "/assets/img/people/silas-junior.jpg"
 
 email: "silasjunior@id.uff.br"
 github: "https://github.com/silasfljr"
-orcid: "0009-0000-5439-2853"  # conferir!
+orcid: "0009-0000-5439-2853"  
 lattes: "https://lattes.cnpq.br/2080549757209859"
+researchgate: "https://www.researchgate.net/profile/Silas-Junior"
 
 location: "Niterói, RJ, Brazil"
 order: 32
