@@ -18,7 +18,7 @@ researchgate: "https://www.researchgate.net/profile/Silas-Junior"
 orcid: "0009-0000-5439-2853"
 
 location: "Niterói, RJ"
-order: 2
+order: 32
 slug: silas-junior
 ---
 
