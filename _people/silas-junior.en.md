@@ -15,6 +15,7 @@ email: "silasjunior@id.uff.br"
 github: "https://github.com/silasfljr"
 orcid: "0009-0000-5439-2853"  
 lattes: "https://lattes.cnpq.br/2080549757209859"
+researchgate: "https://www.researchgate.net/profile/Silas-Junior"
 
 location: "Niterói, RJ, Brazil"
 order: 32
