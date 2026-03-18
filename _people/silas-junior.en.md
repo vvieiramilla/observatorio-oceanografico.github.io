@@ -17,7 +17,7 @@ orcid: "0009-0000-5439-2853"  # conferir!
 lattes: "https://lattes.cnpq.br/2080549757209859"
 
 location: "Niterói, RJ, Brazil"
-order: 2
+order: 32
 slug: silas-junior
 ---
 
