@@ -1,18 +1,25 @@
 ---
 layout: academic_profile
 title: "Silas Júnior"
-permalink: /equipe/silas-junior/
-profile:
-  name: "Silas Júnior"
-  profession: "Aluno(a) de Iniciação Tecnológica"
-  avatar: "/assets/img/equipe/Silas-Junior.jpg"
-  email: "silasjunior@id.uff.br"
-  github: "https://github.com/silasfljr"
-  lattes: "https://lattes.cnpq.br/2080549757209859"
-  researchgate: "https://www.researchgate.net/profile/Silas-Junior"
-  orcid: "https://orcid.org/0009-0000-5439-2853"
-  scholar: ""
-  location: "UFF - Niterói, RJ"
+lang: pt
+permalink: /pessoas/silas-junior/
+alt_lang: /people/silas-junior/
+
+role: "Aluno de Iniciação Tecnológica"
+affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
+affiliation_url: "https://ppgdot-uff.com.br/"
+
+avatar: "/assets/img/people/silas-junior.jpg"
+
+email: "silasjunior@id.uff.br"
+github: "https://github.com/silasfljr"
+lattes: "https://lattes.cnpq.br/2080549757209859"
+researchgate: "https://www.researchgate.net/profile/Silas-Junior"
+orcid: "0009-0000-5439-2853"
+
+location: "Niterói, RJ"
+order: 2
+slug: silas-junior
 ---
 
 ## Fala ae! 👋
