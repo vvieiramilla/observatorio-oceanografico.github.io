@@ -5,18 +5,19 @@ lang: en
 permalink: /people/silas-junior/
 alt_lang: /pessoas/silas-junior/
 
-role: "Undergraduate Tecnological Fellow (CNPq)"
-affiliation: "Undergraduate Program in Agricultural and Environmental Engineering"
+role: "Undergraduate Research Fellow (CNPq – Technological Development)"
+affiliation: "Fluminense Federal University (UFF) — Agricultural and Environmental Engineering"
+affiliation_url: ""
 
 avatar: "/assets/img/people/silas-junior.jpg"
 
 email: "silasjunior@id.uff.br"
 github: "https://github.com/silasfljr"
-orcid: "0009-0003-5746-1596"
+orcid: "0009-0000-5439-2853"  # conferir!
 lattes: "https://lattes.cnpq.br/2080549757209859"
 
 location: "Niterói, RJ, Brazil"
-order: 32
+order: 2
 slug: silas-junior
 ---
 
