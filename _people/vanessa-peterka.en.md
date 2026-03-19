@@ -12,7 +12,7 @@ affiliation_url: "http://observatoriooceanografico.org/"
 avatar: "/assets/img/people/vanessa-peterka.jpg"
 
 email: "vanessapeterka@id.uff.br"
-orcid: ""
+orcid: "0009-0004-1030-8225"
 lattes: "https://lattes.cnpq.br/2355330990486111"
 
 location: "São Paulo, SP, Brazil"
